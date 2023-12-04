@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM1 Campaign Program</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>IIUM RM1 Campaign Program</h1>
+    </header>
+
+    <div id="program-info">
+
+        <img src="iium-logo.png" alt="IIUM Logo">
+        <div id="slideshow">
+            <img src="program-photo1.jpg" alt="Program Image 1">
+            <img src="program-photo2.jpg" alt="Program Image 2">
+            <img src="program-photo3.jpg" alt="Program Image 3">
+        </div>
+        <p><strong>Let your contributions be perpetual for the pleasure of Allah swt</strong></p>
+        <h2><strong>مَّثَلُ ٱلَّذِينَ يُنفِقُونَ أَمْوَٰلَهُمْ فِى سَبِيلِ ٱللَّهِ كَمَثَلِ حَبَّةٍ أَنۢبَتَتْ سَبْعَ سَنَابِلَ فِى كُلِّ سُنۢبُلَةٍۢ مِّا۟ئَةُ حَبَّةٍۢ ۗ وَٱللَّهُ يُضَـٰعِفُ لِمَن يَشَآءُ ۗ وَٱللَّهُ وَٰسِعٌ عَلِيمٌ </strong></h2>
+        <p><i>“The example of those who spend their wealth in the way of Allah is like a seed [of grain] which grows seven spikes; in each spike is a hundred grains. And Allah multiplies [His reward] for whom He wills. And Allah is all-Encompassing and Knowing.”</i></p>
+        <p><i>Al-Baqarah:261</i></p>
+    </div>
+
+
+    <div id="monthly-deduction-form">
+        <h2>Monthly Salary Deduction Form</h2>
+        <form id="deduction-form" action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="staffid">Staff No.:</label>
+            <input type="text" id="staffid" name="staffid" required>
+            <label for="KCDIO">K/C/D/I/O:</label>
+            <input type="text" id="KCDIO" name="KCDIO" required>
+            <label for="Contactno">Contact No:</label>
+            <input type="text" id="Contactno" name="Contactno" required>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <label for="monthly-deduction">Monthly Deduction Amount (RM):</label>
+            <input type="number" id="monthly-deduction" name="monthly-deduction" min="1" required>
+
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="bank-transfer">Bank Transfer</option>
+                <option value="credit-card">Credit Card</option>
+            </select>
+            <label for="start-date">Salary Deduction Start Date:</label>
+        <input type="month" id="start-date" name="start-date" required>
+
+        <label for="end-date">Salary Deduction End Date or Further Notice:</label>
+        <input type="month" id="end-date" name="end-date" required>
+
+        <p>The above salary deduction will take effect from 
+            <span id="start-month-display"></span>
+            <span id="start-year-display"></span> 
+            until 
+            <span id="end-month-display"></span>
+            <span id="end-year-display"></span>
+            or further notice.
+        </p>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="contact-info">
+        <h2>IIUM Endowment Fund Contact Information</h2>
+        <p>Email: ief@iium.edu.my</p>
+        <p>Phone: 03-64214133</p>
+        <p>Website: <a href="http://www.iium.edu.my/ief" target="_blank">www.iium.edu.my/ief</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/ief.official/" target="_blank">www.facebook.com/ief.official/</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
